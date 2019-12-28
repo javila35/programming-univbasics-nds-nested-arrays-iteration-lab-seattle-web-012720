@@ -28,11 +28,10 @@ def find_greater_pair(src)
   
   new_array = []
   
-  inner_results = []
-  
   row_index = 0
   while row_index < src.count do
     element_index = 0
+    inner_results = []
     while element_index < src[row_index].count do 
       inner_results << src[row_index][element_index]
       element_index += 1 
