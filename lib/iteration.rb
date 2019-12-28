@@ -68,5 +68,6 @@ def total_even_pairs(src)
         total += inner_results[0] + inner_results[1]
       end 
       row_index += 1 
+    end
   end
 end
