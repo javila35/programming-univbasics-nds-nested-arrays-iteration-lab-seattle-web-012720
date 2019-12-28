@@ -34,12 +34,12 @@ def find_greater_pair(src)
       inner_results << src[row_index][element_index]
       element_index += 1 
     end
-  row_index += 1 
-  end
   if inner_results[0] < inner_results[1]
     new_array << inner_results[1]
   else
     new_array << inner_results[0]
+  end
+  row_index += 1 
   end
   p new_array
 end
