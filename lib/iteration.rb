@@ -62,10 +62,11 @@ def total_even_pairs(src)
       if src[row_index][element_index] % 2 == 0 do
         inner_results << src[row_index][element_index]
       end
-      if inner_results.count == 2 do
-        total += inner_results[0] + inner_results[1]
       element_index += 1
       end
+      if inner_results.count == 2 do
+        total += inner_results[0] + inner_results[1]
+      end 
       row_index += 1 
   end
 end
